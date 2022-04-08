@@ -3,6 +3,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 import java.util.ArrayList;
 
 public class InterruptedException {
@@ -20,7 +22,7 @@ public class InterruptedException {
         // implicit wait
 //        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         // explicit wait
-        WebDriverWait wait = new WebDriverWait(driver, 5);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 
         // implicit and explicit wait
         driver.get("https://rahulshettyacademy.com/seleniumPractise/");
